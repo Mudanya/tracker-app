@@ -1,0 +1,12 @@
+import { ReactNode } from "react"
+
+type Props = {
+    children:ReactNode
+}
+const Alert = ({children}:Props) => {
+  return (
+    <div className="alert alert-primary">{children}</div>
+  )
+}
+
+export default Alert

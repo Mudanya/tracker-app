@@ -1,6 +1,7 @@
-import axios,{CanceledError} from 'axios'
+import axios,{CanceledError,AxiosError} from 'axios'
 
-export  const  apiClient = axios.create({
+export  default axios.create({
     baseURL:'https://jsonplaceholder.typicode.com'
 })
 
+export  {CanceledError,AxiosError}
